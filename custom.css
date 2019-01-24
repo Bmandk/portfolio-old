@@ -23,31 +23,35 @@ h1 {
     text-align: center;
 }
 
+p {
+    margin: 10px 30px;
+    text-align: justify;
+}
+
 .navbar {
     margin-bottom: 50px;
 }
 
 .navbar-brand {
-    width: 100%;
     padding-left: 15px;
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
 }
 
 .container-fluid {
-    max-width: 1000px;
+    max-width: 992px;
+    margin: 0 10px;
 }
 
 .project {
     position: relative;
-    padding: 6px;
+    padding: 6px 30px;
     margin: auto;
 }
 
 .project img {
     width: 100%;
     height: auto;
-    opacity: 0.7;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -90,7 +94,9 @@ h1 {
 
 .vid {
     position: relative;
+    margin: 0px 50px;
     padding-bottom: 56.25%;
+    height: 0;
 }
 
 .vid iframe {
@@ -150,10 +156,14 @@ h1 {
 
 @media only screen and (min-width : 992px) {
     .vid {
-        //padding-bottom: 28.125%;
+        margin: auto;
     }
-    
+
     .projecttext {
         margin-top: 0;
+    }
+
+    .container-fluid {
+        margin: auto;
     }
 }
