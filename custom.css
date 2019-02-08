@@ -28,18 +28,42 @@ p {
 }
 
 .navbar {
-    margin-bottom: 50px;
+    margin: 0;
+    background-color: darkred;
+    border-radius: 0;
+}
+
+.navbar a {
+    color: #ecf0f1;
+}
+
+.navbar a:hover, .navbar li a:hover {
+    color: #ffbbbc;
+    background-color: darkred;
 }
 
 .navbar-brand {
-    /*padding-left: 15px;*/
+    padding: 15px;
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
 }
 
+.navbar-toggle {
+    background-color: white;
+    margin-right: 10px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #888888;
+}
+
 .container {
     max-width: 992px;
-    margin: 0 15px
+    height: calc(100% - 50px);
+}
+
+.content {
+    margin: 20px 20px;
 }
 
 .project {
@@ -51,33 +75,23 @@ p {
 .project img {
     width: 100%;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.project img:hover {
+    opacity: 0.3;
+    transition: opacity 0.15s;
 }
 
 .project a {
     width: 100%;
+}
+
+.project a:hover h2 {
     opacity: 1;
-    transition: opacity 0.15s;
 }
 
-.project a:hover {
-    opacity: 0.5;
-}
-
-.project a:hover h2, .project a:hover h4 {
-    opacity: 1;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: black;
-    font-size: 18px;
-}
-
-.project a h2, .project a h4 {
+.project a h2 {
     opacity: 0;
     position: absolute;
     z-index: 1;
@@ -88,17 +102,18 @@ p {
     transform: translateY(-50%);
     color: black;
     font-size: 18px;
-    transition: opacity 0.3s;
+    transition: opacity 0.15s;
+    pointer-events: none;
 }
 
 .vid {
     position: relative;
-    margin: 0px 50px;
+    margin: 0px 30px;
     padding-bottom: 56.25%;
     height: 0;
 }
 
-.vid iframe {
+.vid iframe, .vid video {
     position: absolute;
     border: none;
     width: 100%;
@@ -127,8 +142,15 @@ p {
     border-radius: 50%;
 }
 
-.logo img {
+.logo {
+    display: inline-block;
     margin: 12.5px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
 }
 
 #contact, #contact p {
@@ -154,6 +176,10 @@ p {
 
     .container {
         margin: auto;
+    }
+
+    .content {
+        margin-top: 50px
     }
 }
 
