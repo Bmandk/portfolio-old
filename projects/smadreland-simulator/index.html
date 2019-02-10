@@ -1,11 +1,19 @@
 <!doctype html>
 <html>
     <head>
-        <title>Wizard Smackdown</title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132748686-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-132748686-1');
+        </script>
+        <title>Smadreland Simulator</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/custom.css">
+        <link rel="stylesheet" href="/css/custom.css">
         
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script async src="/js/bootstrap.min.js"></script>
@@ -23,13 +31,13 @@
             <div class="row">
                 <div class="col-xs-12 col-md-offset-0 projecttext">
                     <div class="col-xs-12 col-md-5">
-                        <div class="vid">
+                        <a href="#" class="pop"><img src="/images/smadreland-game.jpg" alt="Gameplay"></a>
+                        <div class="vid hidden-xs hidden-sm">
                             <video src="/images/smadreland.mp4" type="video/mp4"></video>
                             <video controls>
                                 <source src="/images/smadreland.mp4" type="video/mp4">
                             </video>
                         </div>
-                        <a href="#" class="pop"><img class="hidden-xs hidden-sm" src="/images/smadreland-game.jpg" alt="Gameplay"></a>
                     </div>
                     <div class="col-xs-12 col-md-6 col-md-offset-1">
                         <p>
@@ -57,7 +65,12 @@
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-5">
-                        <img class="hidden-md hidden-lg" src="/images/smadreland-game.jpg" alt="Gameplay">
+                        <div class="vid hidden-md hidden-lg">
+                            <video src="/images/smadreland.mp4" type="video/mp4"></video>
+                            <video controls>
+                                <source src="/images/smadreland.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>
