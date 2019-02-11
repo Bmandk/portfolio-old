@@ -1,18 +1,22 @@
 <!doctype html>
 <html lang="en-us">
-  <head>
+<head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132748686-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-132748686-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-132748686-1');
     </script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="shortcut icon" href="TemplateData/favicon.ico"/>
     <script src="TemplateData/UnityProgress.js"></script>
 
     <title>Projekter</title>
@@ -21,33 +25,37 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/custom.css">
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script async src="/js/bootstrap.min.js"></script>
     <script async src="/js/custom.js"></script>
-  </head>
-  <body>
-    <nav></nav>
-    <div class="template-wrap clear">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
-      <br>
-      <div class="logo"></div>
-      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">February - Anthem - Viking Revenge</div>
+</head>
+<body>
+<nav></nav>
+<div class="container content">
+    <div class="game">
+        <div class="wrap">
+            <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" width="100%"></canvas>
+        </div>
+        <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen"
+                                     title="Fullscreen" onclick="SetFullscreen(1);"/></div>
+        <img src="/images/playbutton.png" onclick="runUnityLoader(this)">
     </div>
-    <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    backgroundColor: "#222C36",
-    splashStyle: "Light",
-    dataUrl: "Release/Build.data",
-    codeUrl: "Release/Build.js",
-    asmUrl: "Release/Build.asm.js",
-    memUrl: "Release/Build.mem",
-  };
+</div>
+<script type='text/javascript'>
+    var Module = {
+        TOTAL_MEMORY: 268435456,
+        errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+        compatibilitycheck: null,
+        backgroundColor: "#222C36",
+        splashStyle: "Light",
+        dataUrl: "Release/Build.data",
+        codeUrl: "Release/Build.js",
+        asmUrl: "Release/Build.asm.js",
+        memUrl: "Release/Build.mem",
+    };
 </script>
-<script src="Release/UnityLoader.js"></script>
+<!--<script src="Release/UnityLoader.js"></script>-->
 
-  </body>
+</body>
 </html>

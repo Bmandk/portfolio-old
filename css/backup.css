@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Raleway:400,700|Source+Sans+Pro');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bungee', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+.navbar {
+    margin: 0;
+    background-color: darkred;
+    border-radius: 0;
+}
+
+.navbar a {
+    color: #ecf0f1;
+}
+
+.navbar a:hover, .navbar li a:hover {
+    color: #ffbbbc;
+    background-color: darkred;
+}
+
+.navbar-brand {
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+
+.navbar-toggle {
+    background-color: white;
+    margin-right: 10px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #888888;
+}
+
+.container {
+    max-width: 992px;
+    height: calc(100% - 50px);
+}
+
+.content {
+    margin: 20px 20px;
+}
+
+.content ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.project {
+    position: relative;
+    padding: 6px 30px;
+    margin: auto;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+}
+
+.project img:hover {
+    opacity: 0.3;
+    transition: opacity 0.15s;
+}
+
+.project a {
+    width: 100%;
+    position: relative;
+}
+
+.project a h2 {
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    color: black;
+    font-size: 18px;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+.project a:hover h2 {
+    opacity: 1;
+}
+
+.vid {
+    position: relative;
+    margin: 0px 30px;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.vid iframe, .vid video {
+    position: absolute;
+    border: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.projecttext img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.header {
+    text-align: center;
+}
+
+#profilepic img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.logo {
+    display: inline-block;
+    margin: 12.5px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#contact, #contact p {
+    text-align: center;
+}
+
+@media only screen and (min-width : 768px) {
+    .project {
+        padding: 3px 5px;
+    }
+
+    .project h2 {
+        font-size: 30px;
+    }
+
+    #cv {
+        margin-top: 30px;
+    }
+
+    #profilepic img {
+        margin-top: 60px;
+    }
+
+    .container {
+        margin: auto;
+    }
+
+    .content {
+        margin-top: 50px
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    .vid {
+        margin: auto;
+    }
+}
