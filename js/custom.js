@@ -9,3 +9,10 @@ $(document).ready(function(){
 		$('#imagemodal').modal('show');   
 	});
 });
+
+function runUnityLoader(element) {
+	var script = document.createElement("script");
+	script.src = "Release/UnityLoader.js";
+	document.body.appendChild(script);
+	element.remove();
+}
