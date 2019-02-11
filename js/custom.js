@@ -10,9 +10,14 @@ $(document).ready(function(){
 	});
 });
 
-function runUnityLoader(element) {
+$('.game img').on('touchstart click', function() {
 	var script = document.createElement("script");
 	script.src = "Release/UnityLoader.js";
 	document.body.appendChild(script);
-	element.remove();
-}
+
+    var script = document.createElement("script");
+    script.src = "TemplateData/UnityProgress.js";
+    document.body.appendChild(script);
+
+	$(this).remove();
+});
