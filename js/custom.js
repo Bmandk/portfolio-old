@@ -15,7 +15,7 @@ $('.game img').on('touchstart click', function() {
 	script.src = "Release/UnityLoader.js";
 	document.body.appendChild(script);
 
-    var script = document.createElement("script");
+    script = document.createElement("script");
     script.src = "TemplateData/UnityProgress.js";
     document.body.appendChild(script);
 

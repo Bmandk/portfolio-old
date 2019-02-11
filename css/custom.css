@@ -156,6 +156,7 @@ p {
   width: 100%;
   display: inline-block;
   background-color: #222c36;
+  margin-bottom: 30px;
 }
 .game .wrap {
   position: relative;
