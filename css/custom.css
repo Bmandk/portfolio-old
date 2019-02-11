@@ -72,23 +72,19 @@ p {
   padding: 6px 30px;
   margin: auto;
 }
-
 .project img {
   width: 100%;
   height: auto;
   opacity: 1;
 }
-
 .project img:hover {
   opacity: 0.3;
   transition: opacity 0.15s;
 }
-
 .project a {
   width: 100%;
   position: relative;
 }
-
 .project a h2 {
   width: 100%;
   opacity: 0;
@@ -103,7 +99,6 @@ p {
   transform: translateY(-50%);
   margin: 0;
 }
-
 .project a:hover h2 {
   opacity: 1;
 }
