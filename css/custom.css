@@ -122,8 +122,9 @@ p {
 }
 
 .projecttext img {
-  width: 100%;
-  margin: 10px 0;
+  display: block;
+  width: 70%;
+  margin: 10px auto;
 }
 
 .header {
@@ -186,8 +187,12 @@ p {
   transform: translate(-50%, -60%);
 }
 
-#contact, #contact p {
+.contact {
   text-align: center;
+  margin-top: 20px;
+}
+.contact p {
+  text-align: inherit;
 }
 
 @media only screen and (min-width: 768px) {
@@ -197,6 +202,11 @@ p {
 
   .project h2 {
     font-size: 30px;
+  }
+
+  .projecttext img {
+    margin: 0;
+    width: 100%;
   }
 
   #cv {
