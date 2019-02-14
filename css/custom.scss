@@ -2,6 +2,7 @@
 
 $navbarcolor: darkred;
 $navbarhover: #7e0000;
+$projecthovertime: 0.25s;
 
 * {
   margin: 0;
@@ -77,15 +78,31 @@ p {
   position: relative;
   padding: 6px 30px;
   margin: auto;
+  z-index: 0;
+  -webkit-transition: z-index $projecthovertime, transform $projecthovertime;
+  -moz-transition: z-index $projecthovertime, transform $projecthovertime;
+  -ms-transition: z-index $projecthovertime, transform $projecthovertime;
+  -o-transition: z-index $projecthovertime, transform $projecthovertime;
+  transition: z-index $projecthovertime, transform $projecthovertime;
+  transform: scale(1);
+
+  &:hover {
+    z-index: 1;
+    transform: scale(1.1);
+  }
 
   img {
     width: 100%;
     height: auto;
     opacity: 1;
+    -webkit-transition: opacity $projecthovertime;
+    -moz-transition: opacity $projecthovertime;
+    -ms-transition: opacity $projecthovertime;
+    -o-transition: opacity $projecthovertime;
+    transition: opacity $projecthovertime;
 
     &:hover {
       opacity: 0.3;
-      transition: opacity 0.15s;
     }
   }
 
@@ -96,10 +113,10 @@ p {
     h2 {
       width: 100%;
       opacity: 0;
-      z-index: 1;
+      z-index: 2;
       color: black;
       font-size: 18px;
-      transition: opacity 0.15s;
+      transition: opacity $projecthovertime;
       pointer-events: none;
       text-align: center;
       position: absolute;
@@ -108,8 +125,11 @@ p {
       margin: 0;
     }
 
-    &:hover h2 {
-      opacity: 1;
+    &:hover {
+      h2 {
+        opacity: 1;
+        transform: translateY(-50%);
+      }
     }
   }
 }
@@ -207,7 +227,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .project {
-    padding: 3px 5px;
+    padding: 4px 8px;
   }
 
   .project h2 {

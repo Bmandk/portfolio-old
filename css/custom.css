@@ -71,15 +71,30 @@ p {
   position: relative;
   padding: 6px 30px;
   margin: auto;
+  z-index: 0;
+  -webkit-transition: z-index 0.25s, transform 0.25s;
+  -moz-transition: z-index 0.25s, transform 0.25s;
+  -ms-transition: z-index 0.25s, transform 0.25s;
+  -o-transition: z-index 0.25s, transform 0.25s;
+  transition: z-index 0.25s, transform 0.25s;
+  transform: scale(1);
+}
+.project:hover {
+  z-index: 1;
+  transform: scale(1.1);
 }
 .project img {
   width: 100%;
   height: auto;
   opacity: 1;
+  -webkit-transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
+  -ms-transition: opacity 0.25s;
+  -o-transition: opacity 0.25s;
+  transition: opacity 0.25s;
 }
 .project img:hover {
   opacity: 0.3;
-  transition: opacity 0.15s;
 }
 .project a {
   width: 100%;
@@ -88,10 +103,10 @@ p {
 .project a h2 {
   width: 100%;
   opacity: 0;
-  z-index: 1;
+  z-index: 2;
   color: black;
   font-size: 18px;
-  transition: opacity 0.15s;
+  transition: opacity 0.25s;
   pointer-events: none;
   text-align: center;
   position: absolute;
@@ -101,6 +116,7 @@ p {
 }
 .project a:hover h2 {
   opacity: 1;
+  transform: translateY(-50%);
 }
 
 .vid {
@@ -192,7 +208,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .project {
-    padding: 3px 5px;
+    padding: 4px 8px;
   }
 
   .project h2 {
