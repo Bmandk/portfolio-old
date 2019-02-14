@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	$.get("/navbar.html", function(data){
 		$("nav").replaceWith(data);
 	});
