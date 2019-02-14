@@ -1,6 +1,10 @@
 $(document).ready(function(){
 	$.get("/navbar.html", function(data){
-		$("nav").replaceWith(data);
+		$("body").prepend(data);
+	});
+
+	$.get("/footer.html", function(data){
+		$("body").append(data);
 	});
 
     // Sætter BootStraps modal-vindues-billede til det vi har trykket på og åben modal-vinduet.
