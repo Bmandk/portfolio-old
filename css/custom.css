@@ -62,6 +62,12 @@ p {
 .content {
   margin: 20px 20px;
 }
+.content ul {
+  font-weight: bold;
+}
+.content ul:before {
+  content: "Roles:";
+}
 
 .content ul {
   list-style-type: disc;
