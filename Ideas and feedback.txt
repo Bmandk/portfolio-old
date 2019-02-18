@@ -1,2 +1,5 @@
 Subheader in title name/navbar
 Headers for projects (Mobile?)
+Phone+mail icon
+3 quick facts in about
+Where I'm from, favorite game, funfact about me
