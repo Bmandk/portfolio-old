@@ -62,10 +62,10 @@ p {
 .content {
   margin: 20px 20px;
 }
-.content ul {
+.content .projecttext ul {
   font-weight: bold;
 }
-.content ul:before {
+.content .projecttext ul:before {
   content: "Roles:";
 }
 
