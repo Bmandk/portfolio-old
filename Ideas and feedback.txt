@@ -1,0 +1,15 @@
+Subheader in title name/navbar
+Headers for projects (Mobile?)
+Phone+mail icon
+3 quick facts in about
+Where I'm from, favorite game, funfact about me
+Timeline frontpage instead of clicking each project
+Bullet points instead of paragraphs
+
+ - Site should be served over HTTPS
+ - no HTTP/2.0
+ + contact links aren't part of HTML so can't be scraped.
+ + cache headers are properly set
+ - the entire video on smadreland-simulator is downloaded before any user input
+ - pages are missing og:tags and oembed (so won't get any preview on twitter, discord, facebook etc).
+ - some header tags are invalid HTML (links with no closing tag)
